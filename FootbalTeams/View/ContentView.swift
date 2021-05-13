@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     var body: some View {
+        
         TabView {
-            TeamListView()
-                .tabItem {
-                    Image(systemName: "sportscourt")
-                    Text("Clubs")
-                }
-            
-            AboutView()
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("About")
-                }
+            NavigationView {
+                TeamListView()
+                    .navigationBarColor(backgroundColor: .white, tintColor: .black)
+            }
+            .tabItem {
+                Image(systemName: "sportscourt")
+                Text("Clubs")
+            }
+            NavigationView {
+                AboutView()
+                    .navigationBarColor(backgroundColor: .white, tintColor: .black)
+            }
+            .tabItem {
+                Image(systemName: "person.crop.circle")
+                Text("About")
+            }
         }
     }
 }

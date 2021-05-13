@@ -9,14 +9,13 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                AboutBoxComponent()
-                    .padding(.top, 35)
-                Spacer()
-            }
-            .navigationTitle("About")
+        
+        VStack {
+            AboutBoxComponent()
+                .padding(.top, 35)
+            Spacer()
         }
+        .navigationTitle("About")
     }
 }
 

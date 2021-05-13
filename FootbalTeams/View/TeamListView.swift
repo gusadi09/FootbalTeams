@@ -11,46 +11,38 @@ struct TeamListView: View {
     
     @ObservedObject var apiService = ApiService()
     @State var showContent = false
+    @Environment(\.viewController) private var viewControllerHolder: ViewControllerHolder
+    
+    private var viewController: UIViewController? {
+        self.viewControllerHolder.value
+    }
+    
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(apiService.dataTotal?.teams ?? [], id: \.id) { item in
-                        Button(action: {
-                            self.showContent.toggle()
-                        }, label: {
-                            TeamsCell(title: item.shortName, subtitle: item.name, imageUrl: URL(string: item.crestUrl)!)
-                                .padding(20)
-                                .sheet(isPresented: self.$showContent, content: {
-                                    DetailTeamsView()
-                                })
-                        })
+        ZStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(apiService.dataTotal?.teams ?? [], id: \.id) { item in
+                    
+                    TeamsCell(title: item.shortName, subtitle: item.name, imageUrl: URL(string: item.crestUrl)!)
+                        .padding(.horizontal, 20)
+                        .padding(.top)
                         .foregroundColor(.black)
-                    }
-                }
-                
-                if (apiService.isLoading) {
-                    VStack {
-                        Indicator()
-                        Text("Loading...")
-                    }
+                        .onTapGesture {
+                            self.viewController?.present(style: .formSheet) {
+                                DetailTeamsView(imageUrl: URL(string: item.crestUrl)!, name: item.name, shortName: item.shortName, clubColors: item.clubColors, Venue: item.venue, address: item.address)
+                            }
+                        }
                 }
             }
-            .navigationTitle("Clubs")
+            
+            if (apiService.isLoading) {
+                VStack {
+                    Indicator()
+                    Text("Loading...")
+                }
+            }
         }
-    }
-}
-
-struct Indicator: UIViewRepresentable {
-    func makeUIView(context: Context) -> UIActivityIndicatorView {
-        let indi = UIActivityIndicatorView(style: .large)
-        
-        return indi
-    }
-    
-    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-        uiView.startAnimating()
+        .navigationTitle("Clubs")
     }
 }
 
