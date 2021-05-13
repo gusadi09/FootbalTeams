@@ -3,23 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994BFE4927466F7737F04B0D /* Pods_FootbalTeams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943E026E6F0C1A83F59D7BF2 /* Pods_FootbalTeams.framework */; };
 		ECA787B1264BE1020048419A /* FootbalTeamsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787B0264BE1020048419A /* FootbalTeamsApp.swift */; };
 		ECA787B3264BE1020048419A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787B2264BE1020048419A /* ContentView.swift */; };
 		ECA787B5264BE1040048419A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA787B4264BE1040048419A /* Assets.xcassets */; };
 		ECA787B8264BE1040048419A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA787B7264BE1040048419A /* Preview Assets.xcassets */; };
+		ECA787D2264BFB2E0048419A /* TeamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787D1264BFB2E0048419A /* TeamsList.swift */; };
+		ECA787D4264BFB430048419A /* Clubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787D3264BFB430048419A /* Clubs.swift */; };
+		ECA787DA264C043D0048419A /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787D9264C043D0048419A /* TeamListView.swift */; };
+		ECA787DC264C05010048419A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787DB264C05010048419A /* AboutView.swift */; };
+		ECA787DE264C06890048419A /* AboutBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787DD264C06890048419A /* AboutBoxComponent.swift */; };
+		ECA787E0264C0A640048419A /* TeamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787DF264C0A640048419A /* TeamsCell.swift */; };
+		ECA787E2264C0DD70048419A /* DetailTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787E1264C0DD70048419A /* DetailTeamsView.swift */; };
+		ECA787EE264C1DA50048419A /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA787ED264C1DA50048419A /* SVGView.swift */; };
+		ECDC39D3264CFAE8007EE5FF /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC39D2264CFAE8007EE5FF /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CCC31B30918A40A3C869872 /* Pods-FootbalTeams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootbalTeams.debug.xcconfig"; path = "Target Support Files/Pods-FootbalTeams/Pods-FootbalTeams.debug.xcconfig"; sourceTree = "<group>"; };
+		7DA95C3EB0D2817BA335E94F /* Pods-FootbalTeams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootbalTeams.release.xcconfig"; path = "Target Support Files/Pods-FootbalTeams/Pods-FootbalTeams.release.xcconfig"; sourceTree = "<group>"; };
+		943E026E6F0C1A83F59D7BF2 /* Pods_FootbalTeams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootbalTeams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA787AD264BE1020048419A /* FootbalTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootbalTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA787B0264BE1020048419A /* FootbalTeamsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamsApp.swift; sourceTree = "<group>"; };
 		ECA787B2264BE1020048419A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECA787B4264BE1040048419A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA787B7264BE1040048419A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECA787B9264BE1040048419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA787D1264BFB2E0048419A /* TeamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsList.swift; sourceTree = "<group>"; };
+		ECA787D3264BFB430048419A /* Clubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clubs.swift; sourceTree = "<group>"; };
+		ECA787D9264C043D0048419A /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
+		ECA787DB264C05010048419A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		ECA787DD264C06890048419A /* AboutBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutBoxComponent.swift; sourceTree = "<group>"; };
+		ECA787DF264C0A640048419A /* TeamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCell.swift; sourceTree = "<group>"; };
+		ECA787E1264C0DD70048419A /* DetailTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTeamsView.swift; sourceTree = "<group>"; };
+		ECA787ED264C1DA50048419A /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		ECDC39D2264CFAE8007EE5FF /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994BFE4927466F7737F04B0D /* Pods_FootbalTeams.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B20ADD19E138447585491066 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CCC31B30918A40A3C869872 /* Pods-FootbalTeams.debug.xcconfig */,
+				7DA95C3EB0D2817BA335E94F /* Pods-FootbalTeams.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D000B6E9ABE0A0FB614124EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				943E026E6F0C1A83F59D7BF2 /* Pods_FootbalTeams.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECA787A4264BE1020048419A = {
 			isa = PBXGroup;
 			children = (
 				ECA787AF264BE1020048419A /* FootbalTeams */,
 				ECA787AE264BE1020048419A /* Products */,
+				B20ADD19E138447585491066 /* Pods */,
+				D000B6E9ABE0A0FB614124EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				ECA787B0264BE1020048419A /* FootbalTeamsApp.swift */,
-				ECA787B2264BE1020048419A /* ContentView.swift */,
+				ECDC39D5264D00C8007EE5FF /* Model */,
+				ECDC39D6264D00CF007EE5FF /* Service */,
+				ECDC39D4264D00A1007EE5FF /* View */,
 				ECA787B4264BE1040048419A /* Assets.xcassets */,
 				ECA787B9264BE1040048419A /* Info.plist */,
 				ECA787B6264BE1040048419A /* Preview Content */,
@@ -69,6 +113,53 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ECDC39D4264D00A1007EE5FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA787B2264BE1020048419A /* ContentView.swift */,
+				ECA787D9264C043D0048419A /* TeamListView.swift */,
+				ECA787DB264C05010048419A /* AboutView.swift */,
+				ECA787E1264C0DD70048419A /* DetailTeamsView.swift */,
+				ECDC39D7264D00E1007EE5FF /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECDC39D5264D00C8007EE5FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECA787D1264BFB2E0048419A /* TeamsList.swift */,
+				ECA787D3264BFB430048419A /* Clubs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECDC39D6264D00CF007EE5FF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC39D2264CFAE8007EE5FF /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ECDC39D7264D00E1007EE5FF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ECA787DD264C06890048419A /* AboutBoxComponent.swift */,
+				ECA787ED264C1DA50048419A /* SVGView.swift */,
+				ECDC39D8264D00EB007EE5FF /* Cell */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		ECDC39D8264D00EB007EE5FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECA787DF264C0A640048419A /* TeamsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECA787BC264BE1040048419A /* Build configuration list for PBXNativeTarget "FootbalTeams" */;
 			buildPhases = (
+				2C161CCA4695C1219486D8CB /* [CP] Check Pods Manifest.lock */,
 				ECA787A9264BE1020048419A /* Sources */,
 				ECA787AA264BE1020048419A /* Frameworks */,
 				ECA787AB264BE1020048419A /* Resources */,
+				48D18979250876F6BF1EA59A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +226,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C161CCA4695C1219486D8CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FootbalTeams-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48D18979250876F6BF1EA59A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FootbalTeams/Pods-FootbalTeams-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FootbalTeams/Pods-FootbalTeams-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FootbalTeams/Pods-FootbalTeams-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECA787A9264BE1020048419A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA787DE264C06890048419A /* AboutBoxComponent.swift in Sources */,
+				ECA787D2264BFB2E0048419A /* TeamsList.swift in Sources */,
 				ECA787B3264BE1020048419A /* ContentView.swift in Sources */,
+				ECA787DA264C043D0048419A /* TeamListView.swift in Sources */,
+				ECA787E0264C0A640048419A /* TeamsCell.swift in Sources */,
+				ECA787EE264C1DA50048419A /* SVGView.swift in Sources */,
+				ECDC39D3264CFAE8007EE5FF /* ApiService.swift in Sources */,
 				ECA787B1264BE1020048419A /* FootbalTeamsApp.swift in Sources */,
+				ECA787E2264C0DD70048419A /* DetailTeamsView.swift in Sources */,
+				ECA787DC264C05010048419A /* AboutView.swift in Sources */,
+				ECA787D4264BFB430048419A /* Clubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +408,7 @@
 		};
 		ECA787BD264BE1040048419A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCC31B30918A40A3C869872 /* Pods-FootbalTeams.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +431,7 @@
 		};
 		ECA787BE264BE1040048419A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA95C3EB0D2817BA335E94F /* Pods-FootbalTeams.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
